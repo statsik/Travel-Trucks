@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 const HomePage = () => {
     return (
         <main className={styles["home-wrapper"]}>
-            {/* <img className={ styles.back } src="../../../public/images/HomePage-Background.png" alt=""></img> */}
             <Container>
                     <h2 className={ styles.title }>Campers of your dreams</h2>
                     <p className={ styles.desc }>You can find everything you want in our catalog</p>
