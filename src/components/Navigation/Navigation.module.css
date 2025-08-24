@@ -1,0 +1,15 @@
+.nav{
+    display: flex;
+    gap: 32px;
+}
+.navlink {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.active{
+    color: var(--navigation-buttons-hover);
+}
+.navlink:hover{
+    color: var(--navigation-buttons-hover);
+}

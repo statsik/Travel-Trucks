@@ -1,0 +1,33 @@
+.home-wrapper{
+    background-image: url('/images/HomePage-Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 72px); 
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+.title{
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--home-page-text-color);
+    margin-bottom: 16px;
+}
+.desc{
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0%;
+    color: var(--home-page-text-color);
+    margin-bottom: 40px;
+}
+.button{
+    color: #FFFF;
+    padding: 16px 48.5px;
+    background-color: var(--home-page-button-back);
+    border-radius: 200px;
+}
+.button:hover{
+    color: #FFFF;
+}

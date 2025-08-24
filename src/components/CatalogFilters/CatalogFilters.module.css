@@ -1,0 +1,116 @@
+.title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(108, 113, 123, 1);
+}
+.input{
+    width: 360px;
+    height: 56;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 12px;
+    padding-top: 18px;
+    padding-right: 218px;
+    padding-bottom: 18px;
+    padding-left: 48px; 
+    background-color: rgba(247, 247, 247, 1);
+    border: none;
+    font-size: 16px;
+    background-image: url('/public/images/icons/LocationIcon.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+.input::placeholder{
+    font-weight: 400;
+    line-height: 24px;               
+    color: rgba(16, 24, 40, 1);
+    font-size: 16px;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+}
+.filterGroupLocation{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+.filterGroupEquipment{
+    display: flex;
+    flex-direction: column;
+}
+.filterGroupEquipment .title{
+    margin-bottom: 32px;
+}
+.titleve{
+    font-weight: 600;
+    font-style: 'Semi Bold';
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(16, 24, 40, 1);
+    margin-bottom: 24px;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(218, 221, 225, 1);
+  margin-bottom: 24px;
+}
+
+.equipmentButtons,
+.typeButtons{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 12px;
+    margin-bottom: 32px;
+}
+.typeButtons{
+    margin-bottom: 40px;
+}
+
+.equipmentButton,
+.typeButton{
+    width: 112px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 40px;
+    align-items: center; 
+}
+.equipmentButton:hover,
+.typeButton:hover{
+    border-color: rgba(228, 72, 72, 1);
+}
+.equipmentButtonActive,
+.typeButtonActive {
+    border-color: rgba(228, 72, 72, 1);
+}
+.equipmentIcon,
+.typeIcon{
+    width: 32px;
+    height: 28px;
+    top: 2px;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+.searchBtn{
+    width: 166px;
+    height: 56px;
+    top: 20px;
+    left: 20px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 200px;
+    padding-top: 16px;
+    padding-right: 60px;
+    padding-bottom: 16px;
+    padding-left: 60px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(228, 72, 72, 1);
+}
