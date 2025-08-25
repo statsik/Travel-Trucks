@@ -38,6 +38,7 @@ const CatalogPage = () => {
                     </aside>
                     <section className={styles.content}>
                         <CatalogList />
+                        <div className={styles.loadMoreContainer}>
                         {hasMore && !loading && (
                             <button 
                                 className={styles.loadMore} 
@@ -47,6 +48,8 @@ const CatalogPage = () => {
                                 Load More
                             </button>
                         )}
+                        {loading && <div className={styles.loading}>Loading more campers...</div>}
+                    </div>
                         {loading && <div className={styles.loading}>Loading more campers...</div>}
                     </section>
                 </div>
