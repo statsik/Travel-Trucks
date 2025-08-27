@@ -13,7 +13,7 @@
 }
 
 .sidebar {
-  width: 400px;
+  width: 641px;
   flex-shrink: 0;
 }
 
@@ -70,16 +70,28 @@
 }
 
 /* Features */
+.tabContent{
+  display: flex;
+  gap: 40px;
+}
 .features {
   margin-bottom: 32px;
+  background-color: rgba(247, 247, 247, 1);
+  border-radius: 10px;
+  padding: 44px 52px;
+  flex-shrink: 0;
+  width: 631px;
+  height: 588px;
 }
 
 .features h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   color: #333;
+  border-bottom: 1px solid rgba(218, 221, 225, 1);
+  padding-bottom: 24px;
 }
 
 
@@ -96,29 +108,23 @@
   color: #333;
 }
 
-.specifications {
-  margin-bottom: 32px;
-}
-
 .specifications h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   color: #333;
 }
 
 .specsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
 .spec {
   display: flex;
   justify-content: space-between;
-  padding: 12px 0;
-  border-bottom: 1px solid #e0e0e0;
 }
 
 .specName {
@@ -313,21 +319,12 @@
     height: 20px;
 }
 .featuresGrid{
-    width: 527px;
     display: flex;
     flex-wrap: wrap;
     gap: 12px
 }
 .tabs{
     margin-bottom: 44px;
-}
-
-.hr {
-  border: none;
-  height: 1px;
-  background-color: rgba(218, 221, 225, 1);
-  margin-bottom: 24px;
-  width: 527px;
 }
 
 .featureWithIcon{

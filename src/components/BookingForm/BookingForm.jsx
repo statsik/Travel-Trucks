@@ -47,9 +47,6 @@ const BookingForm = ({ camper }) => {
         {({ isSubmitting, touched, errors }) => (
           <Form className={styles.form}>
             <div className={styles.formGroup}>
-              <label htmlFor="name" className={styles.label}>
-                Name*
-              </label>
               <Field
                 type="text"
                 id="name"
@@ -63,9 +60,6 @@ const BookingForm = ({ camper }) => {
             </div>
 
             <div className={styles.formGroup}>
-              <label htmlFor="email" className={styles.label}>
-                Email*
-              </label>
               <Field
                 type="email"
                 id="email"
@@ -79,9 +73,6 @@ const BookingForm = ({ camper }) => {
             </div>
 
             <div className={styles.formGroup}>
-              <label htmlFor="bookingDate" className={styles.label}>
-                Booking date*
-              </label>
               <Field
                 type="date"
                 id="bookingDate"
@@ -96,9 +87,6 @@ const BookingForm = ({ camper }) => {
             </div>
 
             <div className={styles.formGroup}>
-              <label htmlFor="comment" className={styles.label}>
-                Comment
-              </label>
               <Field
                 as="textarea"
                 id="comment"

@@ -1,9 +1,12 @@
 .bookingForm {
   background: #fff;
   border-radius: 20px;
-  padding: 24px;
+  padding: 44px 57px;
   border: 1px solid rgba(218, 221, 225, 1);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 641px;
+  flex-shrink: 0;
+  height: 588px;
 }
 
 .formTitle {

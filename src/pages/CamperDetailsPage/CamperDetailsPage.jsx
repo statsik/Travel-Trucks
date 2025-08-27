@@ -131,7 +131,6 @@ const CamperDetailsPage = () => {
                             >
                                 Reviews
                             </button>
-                            <hr />
                         </div>
 
                         <div className={styles.tabContent}>
@@ -158,8 +157,6 @@ const CamperDetailsPage = () => {
                                                 { key: 'height', label: 'Height', value: currentCamper.height },
                                                 { key: 'tank', label: 'Tank', value: currentCamper.tank },
                                                 { key: 'consumption', label: 'Consumption', value: currentCamper.consumption },
-                                                { key: 'transmission', label: 'Transmission', value: currentCamper.transmission },
-                                                { key: 'engine', label: 'Engine', value: currentCamper.engine },
                                             ]
                                             .filter(spec => spec.value)
                                             .map(spec => (
@@ -201,11 +198,10 @@ const CamperDetailsPage = () => {
                                     )}
                                 </div>
                             )}
+                            <div className={styles.sidebar}>
+                                <BookingForm camper={currentCamper} />
+                            </div>
                         </div>
-                    </div>
-
-                    <div className={styles.sidebar}>
-                        <BookingForm camper={currentCamper} />
                     </div>
                 </div>
             </Container>
