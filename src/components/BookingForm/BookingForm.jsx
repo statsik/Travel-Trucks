@@ -54,7 +54,7 @@ const BookingForm = ({ camper }) => {
                 className={`${styles.input} ${
                   touched.name && errors.name ? styles.inputError : ''
                 }`}
-                placeholder="Enter your name"
+                placeholder="Name*"
               />
               <ErrorMessage name="name" component="div" className={styles.error} />
             </div>
@@ -67,24 +67,32 @@ const BookingForm = ({ camper }) => {
                 className={`${styles.input} ${
                   touched.email && errors.email ? styles.inputError : ''
                 }`}
-                placeholder="Enter your email"
+                placeholder="Email*"
               />
               <ErrorMessage name="email" component="div" className={styles.error} />
             </div>
 
             <div className={styles.formGroup}>
-              <Field
-                type="date"
-                id="bookingDate"
-                name="bookingDate"
-                placeholder="Booking date"
-                className={`${styles.input} ${
-                  touched.bookingDate && errors.bookingDate ? styles.inputError : ''
-                }`}
-                min={new Date().toISOString().split('T')[0]}
-              />
-              <ErrorMessage name="bookingDate" component="div" className={styles.error} />
-            </div>
+            <Field
+              type="text"
+              id="bookingDate"
+              name="bookingDate"
+              className={`${styles.input} ${
+                touched.bookingDate && errors.bookingDate ? styles.inputError : ''
+              }`}
+              placeholder="Booking date*"
+              onFocus={(e) => {
+                e.target.type = 'date';
+                e.target.focus();
+              }}
+              onBlur={(e) => {
+                if (!e.target.value) {
+                  e.target.type = 'text';
+                }
+              }}
+            />
+            <ErrorMessage name="bookingDate" component="div" className={styles.error} />
+          </div>
 
             <div className={styles.formGroup}>
               <Field
