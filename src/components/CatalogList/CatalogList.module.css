@@ -79,6 +79,7 @@
 
 .features{
     display: flex;
+    margin-bottom: none;
 }
 .featuresIcons{
     width: 32px;

@@ -43,7 +43,6 @@ const CamperDetailsPage = () => {
         return (
             <>
                 {'★'.repeat(fullStars)}
-                {hasHalfStar && '⭐'}
                 {'☆'.repeat(emptyStars)}
             </>
         );
@@ -87,7 +86,7 @@ const CamperDetailsPage = () => {
             <Container>
                 <div className={styles.wrapper}>
                     <div className={styles.content}>
-                        <h1 className={styles.title}>{currentCamper.name}</h1>
+                        <h2 className={styles.title}>{currentCamper.name}</h2>
                         
                         <div className={styles.ratingLocation}>
                             <div className={styles.rating}>
@@ -131,6 +130,7 @@ const CamperDetailsPage = () => {
                             >
                                 Reviews
                             </button>
+                            <hr />
                         </div>
 
                         <div className={styles.tabContent}>

@@ -20,10 +20,9 @@
 /* Header section */
 .title {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
   margin-bottom: 8px;
-  color: #333;
 }
 
 .location {
@@ -31,7 +30,6 @@
   font-size: 16px;
   line-height: 24px;
   color: #666;
-  margin-bottom: 16px;
 }
 
 .price {
@@ -171,6 +169,14 @@
   margin-bottom: 12px;
 }
 
+.ratingLocation{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
 .reviewer {
   font-weight: 600;
   font-size: 16px;
@@ -180,6 +186,13 @@
 .rating {
   color: #ffd700;
   font-size: 18px;
+  display: flex;
+  gap: 2px;
+}
+
+.ratingText{
+  color: rgba(16, 24, 40, 1);
+;
 }
 
 .comment {
@@ -214,9 +227,10 @@
 
 .price {
   font-weight: 600;
-  font-size: 28px;
-  line-height: 36px;
-  color: #2c5aa0;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: rgba(16, 24, 40, 1);
 }
 
 .perDay {
@@ -335,4 +349,24 @@
     justify-content: center;
     background-color: rgba(242, 244, 247, 1);
     border-radius: 100px;
+}
+
+.tab{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: inherit;
+  border-radius: 0px;
+}
+.tabActive{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 5px solid rgba(228, 72, 72, 1);
+}
+
+hr{
+  background-color:rgba(218, 221, 225, 1);
+  border: 1px solid rgba(218, 221, 225, 1);
+  width: 1312px;
 }
