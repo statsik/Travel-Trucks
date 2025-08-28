@@ -6,25 +6,6 @@
     display: flex;
     gap: 64px;
 }
-.loadMore{
-    padding: 16px 32px;
-    display: flex;
-    justify-content: center;
-    margin: 40px auto 40px auto; 
-    border: 1px solid rgba(218, 221, 225, 1);
-    border-radius: 200px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(16, 24, 40, 1);
-    background-color: #FFFF;
-
-}
-
-.loadMoreContainer {
-    display: flex;
-    justify-content: center;
-}
 
 .content {
     flex: 1;
