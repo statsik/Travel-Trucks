@@ -1,6 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import styles from './BookingForm.module.css';
+import Loader from '../Loader/Loader';
 
 const BookingForm = ({ camper }) => {
   const validationSchema = Yup.object({
@@ -113,7 +114,7 @@ const BookingForm = ({ camper }) => {
               className={styles.submitButton}
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Sending...' : 'Send'}
+              {isSubmitting ? <Loader /> : 'Send'}
             </button>
           </Form>
         )}

@@ -1,0 +1,15 @@
+.overlay {
+    color: rgba(228, 72, 72, 1);
+  position: fixed;
+  inset: 0;
+  background-color: rgba(28, 25, 25, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  pointer-events: all;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  opacity: 1;
+  transition: rgba(228, 72, 72, 1);
+}

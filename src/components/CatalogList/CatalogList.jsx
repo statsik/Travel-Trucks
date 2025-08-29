@@ -6,6 +6,7 @@ import { selectAllCampers, selectCampersLoading, selectHasMoreCampers } from '..
 import { selectAllFavorites } from '../../redux/favorites/selectors';
 import { setPage } from '../../redux/filters/slice';
 import { fetchCampers } from '../../redux/campers/operations';
+import Loader from '../Loader/Loader';
 
 const CatalogList = () => {
   const dispatch = useDispatch();
@@ -97,7 +98,7 @@ const CatalogList = () => {
             onClick={handleLoadMore}
             disabled={loading}
           >
-            {loading ? 'Loading...' : 'Load More'}
+            {loading ? <Loader /> : 'Load More'}
           </button>
         </div>
       )}

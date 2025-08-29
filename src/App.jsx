@@ -1,6 +1,7 @@
 import styles from './App.module.css'
 import { Route, Routes} from "react-router-dom";
 import { lazy, Suspense } from 'react';
+import Loader from './components/Loader/Loader';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const CatalogPage = lazy(() => import('./pages/CatalogPage/CatalogPage'));
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <div className={ styles.appwrapper}>
       <Header />
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/campers" element={<CatalogPage />} />
