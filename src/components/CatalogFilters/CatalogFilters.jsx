@@ -61,7 +61,6 @@ const CatalogFilters = () => {
             <div className={styles.filterGroupEquipment}>
                 <p className={styles.title}>Filters</p>
                 <p className={styles.titleve}>Vehicle equipment</p>
-                <hr />
                 <div className={styles.equipmentButtons}>
                     {equipmentOptions.map(({ name, iconId }) => (
                         <button
@@ -83,7 +82,6 @@ const CatalogFilters = () => {
 
             <div className={styles.filterGroup}>
                 <p className={styles.titleve}>Vehicle Type</p>
-                <hr />
                 <div className={styles.typeButtons}>
                     {typeOptions.map(({ name, iconId }) => (
                         <button

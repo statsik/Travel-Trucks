@@ -52,13 +52,9 @@
     font-size: 20px;
     line-height: 24px;
     color: rgba(16, 24, 40, 1);
+    border-bottom: 1px solid rgba(218, 221, 225, 1);
+    padding-bottom: 24px;
     margin-bottom: 24px;
-}
-hr {
-  border: none;
-  height: 1px;
-  background-color: rgba(218, 221, 225, 1);
-  margin-bottom: 24px;
 }
 
 .equipmentButtons,
@@ -81,6 +77,8 @@ hr {
     gap: 10px;
     padding: 16px 40px;
     align-items: center; 
+    background-color: inherit;
+    border-color: rgba(218, 221, 225, 1);;
 }
 .equipmentButton:hover,
 .typeButton:hover{
