@@ -331,7 +331,21 @@
 .featureIcon{
     width: 20px;
     height: 20px;
+    fill: currentColor;
+    stroke: currentColor; 
+    color: #101828;
 }
+
+.featureWithIcon [href*="lucide_microwave"],
+.featureWithIcon [href*="hugeicons_gas-stove"],
+.featureWithIcon [href*="icon-ion_water-outline"] {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .featuresGrid{
     display: flex;
     flex-wrap: wrap;
