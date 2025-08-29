@@ -156,15 +156,13 @@
 }
 
 .review {
-  padding: 16px;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
   background: #fff;
+  width: 631px;
 }
 
 .reviewHeader {
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
   align-items: center;
   margin-bottom: 12px;
 }
@@ -180,8 +178,15 @@
 .reviewer {
   font-weight: 600;
   font-size: 16px;
-  color: #333;
+  color: rgba(228, 72, 72, 1);
+  font-size: 24px;
+  line-height: 32px;
+
+  background-color: rgba(242, 244, 247, 1);
+  border-radius: 60px;
+  padding: 15px 22px;
 }
+
 
 .rating {
   color: #ffd700;
